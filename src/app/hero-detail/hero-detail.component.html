@@ -1,0 +1,14 @@
+<div *ngIf="hero">
+  <h2>{{ hero.name | uppercase }} Details</h2>
+  <div>Hero ID: {{ hero.id }}</div>
+  <div>Hero Name: {{ hero.name }}</div>
+  <div>Hero Summary: {{ hero.description }}</div>
+  <div>
+    Powers:
+    <span class="power" *ngFor="let power of hero.powers">{{ power }}</span>
+  </div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name" />
+  </div>
+</div>
