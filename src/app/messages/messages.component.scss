@@ -1,0 +1,15 @@
+h2 {
+  margin: 0.5em 0 0;
+}
+.clear {
+  background-color: #f54545;
+  color: white;
+  &:hover {
+    background-color: darken(#f54545, 10%);
+    color: white;
+  }
+}
+.message__text {
+  font-style: italic;
+  margin: 0.5em 0;
+}
